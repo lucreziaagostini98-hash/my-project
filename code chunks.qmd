@@ -1,0 +1,24 @@
+---
+title: "Code chunks"
+author: "Lucrezia"
+affiliation: "Unversity of Trieste"
+format: 
+  html:
+    toc: TRUE
+    toc-location: left
+    number-sections: TRUE
+    grid:   
+      sidebar-width: 200px
+      body-width: 900px
+      margin-width: 400px
+      gutter-width: 1.5rem
+    theme: 
+      light: journal
+      dark: superhero
+self-contained: true
+lang: it
+bibliography: biblio.bib
+reference-location: margin
+citation-location: margin 
+---
+
