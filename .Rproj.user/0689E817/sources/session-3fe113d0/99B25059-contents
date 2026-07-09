@@ -23,9 +23,14 @@ lang: it
 
 This is Lucrezia's website!
 
+And this is a squirrel 
+![a turtle](img/tartaruga.jpg)
+
+@fig-tarta presents a turtle
+
 ## Sub presentation
 
-sub section 
+sub section $X = V + E$
 
 ### Sub sub section 
 
