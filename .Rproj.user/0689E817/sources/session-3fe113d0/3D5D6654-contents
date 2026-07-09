@@ -20,5 +20,83 @@ lang: it
 bibliography: biblio.bib
 reference-location: margin
 citation-location: margin 
+execute: 
+  echo: FALSE
 ---
+```{r}
+head(cars)
+```
+
+```{r}
+#| lst-label: lst-default
+#| lst-cap: Default settings
+head(cars)
+```
+
+```{r}
+#| echo: FALSE
+#| lst-label: lst-echoF
+#| lst-cap: Echo FALSE
+head(cars)
+```
+
+
+```{r}
+#| echo: TRUE
+#| eval: FALSE 
+#| lst-label: lst-echoF
+#| lst-cap: Echo TRUE and eval FALSE
+head(cars)
+
+
+```
+
+
+```{r}
+#| label: fig-normal
+#| fig-cap: normal distribution
+x = seq(-3,3, length.out = 10000)
+dx = dnorm(x)
+plot(x, dx, type ="l", cex =2, lwd = 3)
+```
+
+
+
+```{r}
+#| label: fig-distribution
+#| layout-ncol: 3
+#| fig-cap: Standardized Normal Distribution
+#| fig-subcap: 
+#|   - "Density"
+#|   - "Cumulative"
+#|   - "Quantile"
+x = seq(-3,3, length.out= 1000)
+d = data.frame(x = x, 
+               dx = dnorm(x), 
+               px = pnorm(x), 
+               qx = qnorm(pnorm(x)))
+plot(d$x, d$dx, type = "l", lwd = 2, cex = 2, xlab = "x", ylab = "dx")
+plot(d$x, d$px, type = "l", lwd = 2, cex = 2, xlab = "x", ylab = "px")
+plot(d$px, d$qx, type = "l", lwd = 2, cex = 2, xlab = "px", ylab = "qx")
+```
+```
+```{r}
+#| echo: TRUE
+#| error: TRUE
+```
+
+```{r}
+#| tbl-cap: This is my firsat table
+#| label: tbl-tab
+library(knitr)
+kable(cars)
+
+```
+
+
+```{r}
+#| fig-column: margin
+kable(head(cars))
+plot(cars$speed, cars$dist)
+```
 
