@@ -1,8 +1,36 @@
 ---
 title: "My first website"
 author: "Lucrezia"
-format: html
+affiliation: "Unversity of Trieste"
+format: 
+  html:
+    toc: TRUE
+    toc-location: left
+    number-sections: TRUE
+    grid:   
+      sidebar-width: 200px
+      body-width: 900px
+      margin-width: 400px
+      gutter-width: 1.5rem
+    theme: 
+      light: minty
+      dark: superhero
+self-contained: true
+lang: it
+    
 ---
 #presentation
 
 This is Lucrezia's website!
+
+## Sub presentation
+
+sub section 
+
+### Sub sub section 
+
+another sub sub section 
+
+#### Paragraph
+
+this is the paragraph 
