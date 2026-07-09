@@ -4,6 +4,10 @@ author: "Lucrezia"
 affiliation: "Unversity of Trieste"
 format: 
   html:
+     code-tools: 
+     source: true
+     toggle: false
+     caption: Show the code for this document
     toc: TRUE
     toc-location: left
     number-sections: TRUE
